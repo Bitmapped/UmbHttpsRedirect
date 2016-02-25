@@ -213,3 +213,4 @@ ModelManifest.xml
 /src/UmbracoTest/App_Data/cache
 /src/UmbracoTest/App_Data/Logs
 /src/UmbracoTest/App_Data/TEMP
+/src/UmbracoTest/App_Data/umbraco.config
