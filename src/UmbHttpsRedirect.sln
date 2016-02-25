@@ -5,16 +5,26 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbHttpsRedirect", "UmbHttpsRedirect\UmbHttpsRedirect.csproj", "{7991931E-DCCB-451D-88AC-8B684BFFB501}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoTest", "UmbracoTest\UmbracoTest.csproj", "{E0A25FF4-CD0D-424A-A0ED-B3E107478B35}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		NuGet|Any CPU = NuGet|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7991931E-DCCB-451D-88AC-8B684BFFB501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7991931E-DCCB-451D-88AC-8B684BFFB501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7991931E-DCCB-451D-88AC-8B684BFFB501}.NuGet|Any CPU.ActiveCfg = NuGet|Any CPU
+		{7991931E-DCCB-451D-88AC-8B684BFFB501}.NuGet|Any CPU.Build.0 = NuGet|Any CPU
 		{7991931E-DCCB-451D-88AC-8B684BFFB501}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7991931E-DCCB-451D-88AC-8B684BFFB501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A25FF4-CD0D-424A-A0ED-B3E107478B35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A25FF4-CD0D-424A-A0ED-B3E107478B35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A25FF4-CD0D-424A-A0ED-B3E107478B35}.NuGet|Any CPU.ActiveCfg = NuGet|Any CPU
+		{E0A25FF4-CD0D-424A-A0ED-B3E107478B35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A25FF4-CD0D-424A-A0ED-B3E107478B35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

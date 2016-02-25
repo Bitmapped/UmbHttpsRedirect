@@ -67,11 +67,20 @@ namespace UmbHttpsRedirect.Events
             // Determine if page should be redirected. Check page ID, property, and document type.
             if (request.PublishedContent.GetPropertyValue<bool>("umbHttpsRedirect", false) || settings.PageIds.Contains(request.PublishedContent.Id) || settings.DocTypes.Contains(request.PublishedContent.DocumentTypeAlias))
             {
-                // See if we're not secure already.
+                // Page should be HTTPS. See if it is already HTTPS.
                 if (!context.Request.IsSecureConnection)
                 {
-                    // We need to redirect.
-
+                    // Redirect to HTTPS.
+                    Redirect(context, true);
+                }
+            }
+            else
+            {
+                // Page should be HTTP. If it is HTTPS and we need to force HTTP, redirect.
+                if (context.Request.IsSecureConnection && settings.ForceHttp)
+                {
+                    // Redirect to HTTP.
+                    Redirect(context, false);
                 }
             }
         }

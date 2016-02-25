@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UmbHttpsRedirect")]
-[assembly: AssemblyDescription("Umbraco package to force redirects to HTTPS.")]
+[assembly: AssemblyTitle("UmbracoTest")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Brian M. Powell")]
-[assembly: AssemblyProduct("UmbHttpsRedirect")]
-[assembly: AssemblyCopyright("Copyright ©2016, Brian M. Powell.")]
+[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyProduct("UmbracoTest")]
+[assembly: AssemblyCopyright("Copyright © Microsoft 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7991931e-dccb-451d-88ac-8b684bffb501")]
+[assembly: Guid("e0a25ff4-cd0d-424a-a0ed-b3e107478b35")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -29,8 +29,7 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-// You can specify all the values or you can default the Build and Revision Numbers 
+// You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

@@ -210,3 +210,6 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/src/UmbracoTest/App_Data/cache
+/src/UmbracoTest/App_Data/Logs
+/src/UmbracoTest/App_Data/TEMP
