@@ -91,13 +91,7 @@ namespace UmbHttpsRedirect.Events
             var existingUrl = context.Request.Url;
 
             // Construct new url.
-            var uriBuilder = new UriBuilder()
-            {
-                Host = existingUrl.Host,
-                Path = existingUrl.AbsolutePath,
-                Query = existingUrl.Query,
-                Fragment = existingUrl.Fragment
-            };
+            var uriBuilder = new UriBuilder(existingUrl);
 
             // Determine if we are redirecting to HTTPs.
             if (redirectToHttps)
