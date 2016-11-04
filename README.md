@@ -3,7 +3,7 @@ Event handler plugin for restricting parts of an Umbraco website to an Intranet.
 
 ## What's inside
 
-This project includes a DLL that will register as an event handler with Umbraco. If pages are specified with the proper properties, it will restrict access to those pages to specified networks.
+This project includes a DLL that will register as an event handler with Umbraco. Depending on set page properties or config settings, required pages will be redirected to HTTPS.
 
 ## System requirements
 1. NET Framework 4.5
