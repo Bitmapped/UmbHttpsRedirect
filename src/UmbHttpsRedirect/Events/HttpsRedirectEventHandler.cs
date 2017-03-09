@@ -49,17 +49,18 @@ namespace UmbHttpsRedirect.Events
             var request = sender as PublishedContentRequest;
             var context = HttpContext.Current;
 
-            // If the response is invalid, the page doesn't exist, or will be changed already, don't do anything more.
-            if ((request == null) || (!request.HasPublishedContent) || (request.Is404) || (request.IsRedirect) || (request.ResponseStatusCode > 0))
+            // If the response is invalid, the page doesn't exist, will be changed already, or is a preview, don't do anything more.
+            if ((request == null) || (!request.HasPublishedContent) || (request.Is404) || (request.IsRedirect) || (request.ResponseStatusCode > 0) || (UmbracoContext.Current.InPreviewMode))
             {
                 // Log for debugging.
-                LogHelper.Debug<HttpsRedirectEventHandler>("Stopping HttpsRedirect for requested URL {0} because request was null ({1}), there was no published content ({2}), was 404 ({3}), was a redirect ({4}), or status code ({5}) was already set.",
+                LogHelper.Debug<HttpsRedirectEventHandler>("Stopping HttpsRedirect for requested URL {0} because request was null ({1}), there was no published content ({2}), was 404 ({3}), was a redirect ({4}), status code ({5}) was already set, or is in preview mode ({6}).",
                     () => context.Request.Url.AbsolutePath,
                     () => (request == null),
-                    () => (!request.HasPublishedContent),
-                    () => (request.Is404),
-                    () => (request.IsRedirect),
-                    () => request.ResponseStatusCode);
+                    () => !request.HasPublishedContent,
+                    () => request.Is404,
+                    () => request.IsRedirect,
+                    () => request.ResponseStatusCode,
+                    () => UmbracoContext.Current.InPreviewMode);
 
                 return;
             }
